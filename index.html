@@ -1,0 +1,1446 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- =========================================================
+         1. CONFIGURACIÓN GENERAL DEL DOCUMENTO
+         ========================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BINOVASOFT crea soluciones digitales, páginas web, sistemas de información, automatizaciones y tableros de datos.">
+    <meta name="theme-color" content="#050b16">
+
+    <link rel="icon" type="image/png" href="Img/Logo/LogotipoSB_SF.png">
+
+    <title>BINOVA-SOFT | Soluciones digitales para un mejor mañana</title>
+
+    <!-- =========================================================
+         2. TIPOGRAFÍA E ICONOS EXTERNOS
+         ========================================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- =========================================================
+         3. ARCHIVOS CSS DEL PROYECTO
+         ========================================================= -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/responsive.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         4. BARRA DE NAVEGACIÓN FIJA
+         ========================================================= -->
+    <header class="navbar-fija" id="inicio">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+
+            <div class="container nav-contenedor">
+
+                <!-- LOGOTIPO Y ESLOGAN -->
+                <a class="navbar-brand marca" href="#inicio" aria-label="BINOVASOFT, ir al inicio">
+
+                    <img
+                        src="Img/Logo/LogotipoSB_SF.png"
+                        alt="Logo de BINOVASOFT"
+                        class="logo-menu"
+                    >
+
+                    <span class="marca-texto">
+                        <strong>BINO<span>VA</span>-SOFT</strong>
+                        <small>Soluciones Tecnológicas</small>
+                    </span>
+
+                </a>
+
+                <!-- BOTÓN DEL MENÚ PARA DISPOSITIVOS MÓVILES -->
+                <button
+                    class="navbar-toggler menu-boton"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal"
+                    aria-expanded="false"
+                    aria-label="Abrir o cerrar navegación"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- ENLACES PRINCIPALES -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu-enlaces">
+
+                        <li class="nav-item">
+                            <a class="nav-link activo" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Servicios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/portafolio.html">Portafolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/nosotros.html">Nosotros</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pages/contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- BOTÓN DE COTIZACIÓN -->
+                    <a class="btn-nav" href="Pages/contacto.html">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        <span>Cotiza tu proyecto</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+            <!-- =====================================================
+             5. SLIDER AUDIOVISUAL PRINCIPAL BINOVASOFT
+             Presentación automática de los servicios de la empresa.
+             ===================================================== -->
+
+        <section id="showcase" class="showcase">
+
+            <div class="showcase-contenedor">
+
+                <!-- Diapositiva 1: Desarrollo web -->
+                <div class="showcase-slide activo">
+                    <video class="showcase-video" muted playsinline preload="auto">
+                        <source src="Img/Videos/video-01-web.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">BINOVASOFT · SOLUCIONES DIGITALES</span>
+                        <h2>Desarrollo web profesional</h2>
+                        <p>Diseñamos experiencias digitales modernas para impulsar tu negocio.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 2: Aplicaciones web -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-02-aplicaciones.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">TECNOLOGÍA PARA TU NEGOCIO</span>
+                        <h2>Aplicaciones web</h2>
+                        <p>Plataformas digitales para gestionar y optimizar tus procesos.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 3: Software a medida -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-03-software.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">SOLUCIONES PERSONALIZADAS</span>
+                        <h2>Software a la medida</h2>
+                        <p>Desarrollamos herramientas que responden a las necesidades de cada empresa.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 4: Power BI -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-04-powerbi.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">INTELIGENCIA DE NEGOCIOS</span>
+                        <h2>Dashboards con Power BI</h2>
+                        <p>Transformamos datos en indicadores para tomar mejores decisiones.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 5: Excel y VBA -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-05-excel.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">PRODUCTIVIDAD EMPRESARIAL</span>
+                        <h2>Excel avanzado y VBA</h2>
+                        <p>Automatizamos tareas, reportes y procesos con herramientas de Excel.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 6: Bases de datos -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-06-bases-datos.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">GESTIÓN DE INFORMACIÓN</span>
+                        <h2>Bases de datos</h2>
+                        <p>Diseñamos y administramos bases de datos con SQL Server y MySQL.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 7: Análisis de datos -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-07-analisis.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">DATOS QUE GENERAN VALOR</span>
+                        <h2>Análisis y transformación de datos</h2>
+                        <p>Organizamos y depuramos información para convertirla en conocimiento útil.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 8: Automatización -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-08-automatizacion.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">EFICIENCIA Y OPTIMIZACIÓN</span>
+                        <h2>Automatización de procesos</h2>
+                        <p>Reducimos tareas repetitivas y mejoramos los flujos de trabajo.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 9: Google Sheets -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-09-sheets.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">HERRAMIENTAS EN LA NUBE</span>
+                        <h2>Google Sheets</h2>
+                        <p>Construimos reportes y herramientas colaborativas en la nube.</p>
+                    </div>
+                </div>
+
+                <!-- Diapositiva 10: Capacitación -->
+                <div class="showcase-slide">
+                    <video class="showcase-video" muted playsinline preload="none">
+                        <source src="Img/Videos/video-10-capacitacion.mp4" type="video/mp4">
+                    </video>
+                    <div class="showcase-overlay"></div>
+                    <div class="showcase-texto">
+                        <span class="showcase-etiqueta">APRENDIZAJE Y CONOCIMIENTO</span>
+                        <h2>Capacitación tecnológica</h2>
+                        <p>Compartimos conocimientos para fortalecer las habilidades digitales.</p>
+                    </div>
+                </div>
+
+                <!-- Controles del slider -->
+                <div class="showcase-controles">
+
+                    <button type="button" class="showcase-flecha" id="showcaseAnterior"
+                            aria-label="Video anterior">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+
+                    <button type="button" class="showcase-control" id="showcasePausa"
+                            aria-label="Pausar presentación">
+                        <i class="bi bi-pause-fill"></i>
+                    </button>
+
+                    <button type="button" class="showcase-control" id="showcaseSonido"
+                            aria-label="Activar sonido">
+                        <i class="bi bi-volume-mute-fill"></i>
+                    </button>
+
+                    <button type="button" class="showcase-control" id="showcasePantalla"
+                            aria-label="Ver en pantalla completa">
+                        <i class="bi bi-fullscreen"></i>
+                    </button>
+
+                    <button type="button" class="showcase-flecha" id="showcaseSiguiente"
+                            aria-label="Video siguiente">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+
+                </div>
+
+                <!-- Indicadores de las 10 diapositivas -->
+                <div class="showcase-indicadores" aria-label="Seleccionar video">
+                    <button class="showcase-indicador activo" aria-label="Video 1"></button>
+                    <button class="showcase-indicador" aria-label="Video 2"></button>
+                    <button class="showcase-indicador" aria-label="Video 3"></button>
+                    <button class="showcase-indicador" aria-label="Video 4"></button>
+                    <button class="showcase-indicador" aria-label="Video 5"></button>
+                    <button class="showcase-indicador" aria-label="Video 6"></button>
+                    <button class="showcase-indicador" aria-label="Video 7"></button>
+                    <button class="showcase-indicador" aria-label="Video 8"></button>
+                    <button class="showcase-indicador" aria-label="Video 9"></button>
+                    <button class="showcase-indicador" aria-label="Video 10"></button>
+                </div>
+
+                <!-- Barra de progreso -->
+                <div class="showcase-progreso">
+                    <div class="showcase-progreso-barra" id="showcaseProgreso"></div>
+                </div>
+
+                <!-- Contador -->
+                <div class="showcase-contador" id="showcaseContador">
+                    01 / 10
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =====================================================
+             6. HERO / PORTADA PRINCIPAL
+             ===================================================== -->
+
+
+
+
+    <main>
+
+        <!-- =====================================================
+             5. HERO / PORTADA PRINCIPAL
+             ===================================================== -->
+        <section class="hero">
+
+            <!-- ELEMENTOS DECORATIVOS -->
+            <div class="hero-luz hero-luz-uno" aria-hidden="true"></div>
+            <div class="hero-luz hero-luz-dos" aria-hidden="true"></div>
+            <div class="hero-cuadricula" aria-hidden="true"></div>
+
+            <div class="container hero-contenido">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- COLUMNA IZQUIERDA: MENSAJE Y BOTONES -->
+                    <div class="col-lg-6 hero-texto revelar">
+
+                        <div class="etiqueta-superior">
+                            <span class="punto-luz"></span>
+                            TECNOLOGÍA <b>·</b> INNOVACIÓN <b>·</b> RESULTADOS
+                        </div>
+
+                        <h1>
+                            Soluciones digitales
+                            <span>para un Mejor Mañana.</span>
+                        </h1>
+
+                        <p class="hero-descripcion">
+                            En BINOVASOFT convertimos tus ideas en soluciones digitales
+                            que impulsan el crecimiento de tu negocio. Desarrollamos
+                            software, aplicaciones y plataformas web a la medida de tus necesidades.
+                        </p>
+
+                        <!-- BOTONES PRINCIPALES -->
+                        <div class="hero-botones">
+
+                            <a href="Pages/contacto.html" class="btn-principal">
+                                <i class="bi bi-rocket-takeoff"></i>
+                                Comienza tu proyecto
+                                <i class="bi bi-arrow-right flecha-boton"></i>
+                            </a>
+
+                            <a href="Pages/portafolio.html" class="btn-secundario">
+                                <i class="bi bi-play-circle"></i>
+                                Ver nuestro trabajo
+                            </a>
+
+                        </div>
+
+                        <!-- INDICADORES DE SERVICIO -->
+                        <div class="hero-metricas">
+
+                            <div class="metrica">
+                                <i class="bi bi-briefcase"></i>
+                                <div>
+                                    <strong>Soluciones</strong>
+                                    <small>A la medida</small>
+                                </div>
+                            </div>
+
+                            <div class="metrica">
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <div>
+                                    <strong>Datos</strong>
+                                    <small>Que generan valor</small>
+                                </div>
+                            </div>
+
+                            <div class="metrica">
+                                <i class="bi bi-headset"></i>
+                                <div>
+                                    <strong>Acompañamiento</strong>
+                                    <small>De principio a fin</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COLUMNA DERECHA: DASHBOARD ILUSTRATIVO -->
+                    <div class="col-lg-6 hero-visual revelar revelar-retardo">
+
+                        <div class="visual-escenario">
+
+                            <!-- TARJETA FLOTANTE -->
+                            <div class="tarjeta-flotante tarjeta-ideas">
+                                <span>Ideas</span>
+                                <b>+</b>
+                                <span>Tecnología</span>
+                                <b>=</b>
+                                <strong>Resultados</strong>
+                            </div>
+
+                            <!-- VENTANA PRINCIPAL DEL DASHBOARD -->
+                            <div class="dashboard">
+
+                                <div class="dashboard-cabecera">
+
+                                    <div class="ventana-puntos">
+                                        <i></i>
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+
+                                    <div class="dashboard-marca">
+                                        <span class="mini-marca">B</span>
+                                        BINOVASOFT
+                                    </div>
+
+                                    <div class="dashboard-acciones">
+                                        <i class="bi bi-search"></i>
+                                        <i class="bi bi-bell"></i>
+                                    </div>
+
+                                </div>
+
+                                <div class="dashboard-cuerpo">
+
+                                    <!-- BARRA LATERAL -->
+                                    <aside class="dashboard-lateral">
+
+                                        <span class="lateral-activo">
+                                            <i class="bi bi-grid-1x2"></i>
+                                            Panel
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-kanban"></i>
+                                            Proyectos
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-people"></i>
+                                            Clientes
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-bar-chart"></i>
+                                            Reportes
+                                        </span>
+
+                                        <span>
+                                            <i class="bi bi-gear"></i>
+                                            Ajustes
+                                        </span>
+
+                                    </aside>
+
+                                    <!-- CONTENIDO PRINCIPAL -->
+                                    <div class="dashboard-principal">
+
+                                        <div class="dashboard-titulo">
+
+                                            <div>
+                                                <small>VISTA GENERAL</small>
+                                                <h3>Panel de control</h3>
+                                            </div>
+
+                                            <span class="estado-enlinea">
+                                                <i></i>
+                                                En línea
+                                            </span>
+
+                                        </div>
+
+                                        <!-- INDICADORES KPI -->
+                                        <div class="dashboard-kpis">
+
+                                            <div class="kpi">
+                                                <small>Proyectos</small>
+                                                <strong>12</strong>
+                                                <em>↗ 18%</em>
+                                            </div>
+
+                                            <div class="kpi">
+                                                <small>Clientes</small>
+                                                <strong>28</strong>
+                                                <em>↗ 12%</em>
+                                            </div>
+
+                                            <div class="kpi">
+                                                <small>Rendimiento</small>
+                                                <strong>94%</strong>
+                                                <em>↗ 8%</em>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- GRÁFICOS -->
+                                        <div class="dashboard-graficos">
+
+                                            <div class="grafico-panel">
+
+                                                <div class="grafico-titulo">
+                                                    <span>Rendimiento</span>
+                                                    <small>Últimos 6 meses</small>
+                                                </div>
+
+                                                <div class="grafico-barras" aria-label="Gráfico ilustrativo de rendimiento">
+
+                                                    <span style="--alto:35%"></span>
+                                                    <span style="--alto:52%"></span>
+                                                    <span style="--alto:43%"></span>
+                                                    <span style="--alto:70%"></span>
+                                                    <span style="--alto:61%"></span>
+                                                    <span style="--alto:88%"></span>
+                                                    <span style="--alto:76%"></span>
+                                                    <span style="--alto:96%"></span>
+
+                                                </div>
+
+                                                <div class="grafico-meses">
+                                                    <span>ENE</span>
+                                                    <span>FEB</span>
+                                                    <span>MAR</span>
+                                                    <span>ABR</span>
+                                                    <span>MAY</span>
+                                                    <span>JUN</span>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="grafico-panel grafico-circular-panel">
+
+                                                <div class="grafico-titulo">
+                                                    <span>Objetivo</span>
+                                                    <small>Progreso</small>
+                                                </div>
+
+                                                <div class="grafico-circular">
+                                                    <strong>78<small>%</small></strong>
+                                                </div>
+
+                                                <small class="texto-centrado">Meta alcanzada</small>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- PIE DEL DASHBOARD -->
+                                        <div class="dashboard-pie">
+
+                                            <span>
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                Automatización
+                                            </span>
+
+                                            <span>
+                                                <i class="bi bi-check-circle-fill"></i>
+                                                Analítica de datos
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- TARJETAS DECORATIVAS -->
+                            <div class="tarjeta-flotante tarjeta-codigo">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <div class="tarjeta-flotante tarjeta-crecimiento">
+                                <i class="bi bi-bar-chart-line-fill"></i>
+                                <span>Tu negocio<br>en la era digital</span>
+                            </div>
+
+                            <div class="base-luminosa" aria-hidden="true"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- INDICADOR DE DESPLAZAMIENTO -->
+            <a href="#servicios" class="scroll-indicador" aria-label="Desplazarse a servicios">
+                <span></span>
+                DESCUBRE MÁS
+            </a>
+
+        </section>
+
+
+        <!-- =====================================================
+             6. SERVICIOS PRINCIPALES
+             ===================================================== -->
+        <section class="servicios seccion" id="servicios">
+
+            <div class="decoracion-esfera esfera-izquierda" aria-hidden="true"></div>
+            <div class="decoracion-esfera esfera-derecha" aria-hidden="true"></div>
+
+            <div class="container posicion-contenido">
+
+                <!-- ENCABEZADO -->
+                <div class="encabezado-seccion revelar">
+
+                    <span class="sobre-titulo">NUESTROS SERVICIOS</span>
+
+                    <h2>
+                        ¿Qué podemos hacer
+                        <span>por ti?</span>
+                    </h2>
+
+                    <p>
+                        Soluciones tecnológicas para llevar tu negocio al siguiente nivel.
+                        Desde el desarrollo de software hasta la transformación digital.
+                    </p>
+
+                </div>
+
+                <!-- TARJETAS DE SERVICIOS -->
+                <div class="row g-4 servicios-grid">
+
+                    <div class="col-sm-6 col-xl-3 revelar">
+                        <article class="servicio-card">
+
+                            <div class="servicio-icono">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+
+                            <h3>Desarrollo web</h3>
+
+                            <p>
+                                Sitios web modernos, rápidos y adaptados a las necesidades de tu negocio.
+                            </p>
+
+                            <a href="Pages/desarrollo-web.html">
+                                Conoce más
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3 revelar">
+                        <article class="servicio-card">
+
+                            <div class="servicio-icono">
+                                <i class="bi bi-database"></i>
+                            </div>
+
+                            <h3>Datos y BI</h3>
+
+                            <p>
+                                Convierte tus datos en información útil con reportes y tableros claros.
+                            </p>
+
+                            <a href="Pages/datos-bi.html">
+                                Conoce más
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3 revelar">
+                        <article class="servicio-card">
+
+                            <div class="servicio-icono">
+                                <i class="bi bi-lightning-charge"></i>
+                            </div>
+
+                            <h3>Automatización</h3>
+
+                            <p>
+                                Reduce tareas repetitivas y mejora tus procesos con soluciones prácticas.
+                            </p>
+
+                            <a href="Pages/automatizacion.html">
+                                Conoce más
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </article>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3 revelar">
+                        <article class="servicio-card">
+
+                            <div class="servicio-icono">
+                                <i class="bi bi-window-stack"></i>
+                            </div>
+
+                            <h3>Sistemas de información</h3>
+
+                            <p>
+                                Organiza procesos, registros y operaciones en herramientas hechas a tu medida.
+                            </p>
+
+                            <a href="Pages/servicios.html">
+                                Ver servicios
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             7. PROPUESTA DE VALOR
+             ===================================================== -->
+        <section class="valor seccion">
+
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <!-- MENSAJE Y PROPUESTA -->
+                    <div class="col-lg-6 revelar">
+
+                        <span class="sobre-titulo">TECNOLOGÍA CON PROPÓSITO</span>
+
+                        <h2 class="titulo-valor">
+                            No se trata solo de tecnología.
+                            <span>Se trata de avanzar.</span>
+                        </h2>
+
+                        <p class="texto-valor">
+                            Diseñamos herramientas digitales pensadas para resolver problemas reales:
+                            optimizar el tiempo, organizar la información y facilitar mejores decisiones.
+                        </p>
+
+                        <div class="valor-lista">
+
+                            <div>
+                                <i class="bi bi-check2-circle"></i>
+                                <span>Soluciones alineadas con tus objetivos.</span>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-check2-circle"></i>
+                                <span>Diseño claro y experiencia sencilla.</span>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-check2-circle"></i>
+                                <span>Acompañamiento y mejora continua.</span>
+                            </div>
+
+                        </div>
+
+                        <a href="Pages/nosotros.html" class="btn-secundario btn-valor">
+                            Conoce BINOVA-SOFT
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- PANEL VISUAL DEL PROCESO -->
+                    <div class="col-lg-6 revelar revelar-retardo">
+
+                        <div class="valor-panel">
+
+                            <div class="valor-panel-cabecera">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <small>flujo_de_trabajo.digital</small>
+                            </div>
+
+                            <div class="flujo-paso">
+
+                                <div class="flujo-icono">
+                                    <i class="bi bi-search"></i>
+                                </div>
+
+                                <div>
+                                    <small>PASO 01</small>
+                                    <strong>Entendemos el reto</strong>
+                                    <p>Analizamos tus necesidades.</p>
+                                </div>
+
+                                <i class="bi bi-check-circle-fill flujo-check"></i>
+
+                            </div>
+
+                            <div class="flujo-conector"></div>
+
+                            <div class="flujo-paso">
+
+                                <div class="flujo-icono">
+                                    <i class="bi bi-braces"></i>
+                                </div>
+
+                                <div>
+                                    <small>PASO 02</small>
+                                    <strong>Diseñamos la solución</strong>
+                                    <p>Construimos una herramienta útil.</p>
+                                </div>
+
+                                <i class="bi bi-check-circle-fill flujo-check"></i>
+
+                            </div>
+
+                            <div class="flujo-conector"></div>
+
+                            <div class="flujo-paso">
+
+                                <div class="flujo-icono">
+                                    <i class="bi bi-rocket-takeoff"></i>
+                                </div>
+
+                                <div>
+                                    <small>PASO 03</small>
+                                    <strong>Impulsamos resultados</strong>
+                                    <p>Medimos, aprendemos y mejoramos.</p>
+                                </div>
+
+                                <i class="bi bi-check-circle-fill flujo-check"></i>
+
+                            </div>
+
+                            <div class="panel-etiqueta">
+                                <i class="bi bi-stars"></i>
+                                Ideas que se convierten en soluciones
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             8. PROYECTOS DESTACADOS
+             Los ejemplos son demostrativos. Reemplázalos por
+             proyectos reales cuando estén disponibles.
+             ===================================================== -->
+        <section class="portafolio seccion" id="portafolio">
+
+            <div class="container">
+
+                <!-- ENCABEZADO -->
+                <div class="encabezado-seccion encabezado-flex revelar">
+
+                    <div>
+                        <span class="sobre-titulo">TRABAJO DESTACADO</span>
+
+                        <h2>
+                            Ideas que toman
+                            <span>forma digital.</span>
+                        </h2>
+                    </div>
+
+                </div>
+
+                <!-- TARJETAS DE PROYECTOS -->
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-xl-4 revelar">
+
+                        <article class="proyecto-card">
+
+                            <div class="proyecto-imagen proyecto-dashboard">
+
+                                <div class="mini-dashboard">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+                                <span class="proyecto-etiqueta">ANÁLISIS DE DATOS</span>
+
+                                <a href="Pages/portafolio.html" class="enlace-ver-todo">
+                                    Ver portafolio
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                            <div class="proyecto-info">
+
+                                <small>POWER BI · LOOKER STUDIO · REPORTES</small>
+
+                                <h3>Panel de inteligencia de negocio</h3>
+
+                                <p>
+                                    Una vista clara de indicadores para apoyar decisiones.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 revelar">
+
+                        <article class="proyecto-card">
+
+                            <div class="proyecto-imagen proyecto-web">
+
+                                <div class="ventana-web">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <div class="web-bloque"></div>
+                                    <div class="web-linea"></div>
+                                    <div class="web-linea corta"></div>
+                                </div>
+
+                                <span class="proyecto-etiqueta">DESARROLLO WEB</span>
+
+                                <a href="Pages/portafolio.html" class="enlace-ver-todo">
+                                    Ver portafolio
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                            <div class="proyecto-info">
+
+                                <small>HTML · CSS · JAVASCRIPT · DESARROLLO</small>
+
+                                <h3>Experiencia web corporativa</h3>
+
+                                <p>
+                                    Una presencia digital moderna, clara y adaptable.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-6 col-xl-4 revelar">
+
+                        <article class="proyecto-card">
+
+                            <div class="proyecto-imagen proyecto-automatizacion">
+
+                                <div class="automatizacion-nodos">
+
+                                    <span>
+                                        <i class="bi bi-file-earmark-spreadsheet"></i>
+                                    </span>
+
+                                    <b></b>
+
+                                    <span>
+                                        <i class="bi bi-gear-wide-connected"></i>
+                                    </span>
+
+                                    <b></b>
+
+                                    <span>
+                                        <i class="bi bi-envelope-check"></i>
+                                    </span>
+
+                                </div>
+
+                                <span class="proyecto-etiqueta">AUTOMATIZACIÓN</span>
+
+                                <a href="Pages/portafolio.html" class="enlace-ver-todo">
+                                    Ver portafolio
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+
+                            </div>
+
+                            <div class="proyecto-info">
+
+                                <small>EXCEL · VBA · PROCESOS</small>
+
+                                <h3>Flujo de trabajo automatizado</h3>
+
+                                <p>
+                                    Menos tareas manuales y procesos más consistentes.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             9. BENEFICIOS PARA LOS CLIENTES
+             ===================================================== -->
+        <section id="beneficios" class="seccion-beneficios">
+
+            <div class="contenedor-seccion">
+
+                <!-- ENCABEZADO -->
+                <div class="encabezado-seccion">
+
+                    <span class="etiqueta-seccion">¿POR QUÉ BINOVA - SOFT?</span>
+
+                    <h2>
+                        Tecnología que trabaja
+                        <span>a favor de tu negocio</span>
+                    </h2>
+
+                    <p>
+                        Creamos soluciones digitales enfocadas en mejorar
+                        procesos, organizar información y facilitar decisiones.
+                    </p>
+
+                </div>
+
+                <!-- TARJETAS DE BENEFICIOS -->
+                <div class="grid-beneficios">
+
+                    <article class="tarjeta-beneficio">
+
+                        <div class="icono-beneficio">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+
+                        <h3>Más eficiencia</h3>
+
+                        <p>
+                            Automatizamos tareas repetitivas para ayudarte
+                            a ahorrar tiempo y reducir el trabajo manual.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-beneficio">
+
+                        <div class="icono-beneficio">
+                            <i class="bi bi-bar-chart-line"></i>
+                        </div>
+
+                        <h3>Mejores decisiones</h3>
+
+                        <p>
+                            Organizamos tus datos en reportes y tableros
+                            para que entiendas mejor el estado de tu negocio.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-beneficio">
+
+                        <div class="icono-beneficio">
+                            <i class="bi bi-database-check"></i>
+                        </div>
+
+                        <h3>Información organizada</h3>
+
+                        <p>
+                            Diseñamos soluciones para centralizar información
+                            y facilitar su consulta y mantenimiento.
+                        </p>
+
+                    </article>
+
+                    <article class="tarjeta-beneficio">
+
+                        <div class="icono-beneficio">
+                            <i class="bi bi-people"></i>
+                        </div>
+
+                        <h3>Soluciones a tu medida</h3>
+
+                        <p>
+                            Adaptamos cada propuesta a las necesidades,
+                            los objetivos y el presupuesto de tu proyecto.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             10. TECNOLOGÍAS Y HERRAMIENTAS
+             ===================================================== -->
+        <section id="tecnologias" class="seccion-tecnologias">
+
+            <div class="contenedor-seccion">
+
+                <!-- ENCABEZADO -->
+                <div class="encabezado-seccion">
+
+                    <span class="etiqueta-seccion">NUESTRO ENTORNO TECNOLÓGICO</span>
+
+                    <h2>
+                        Herramientas para crear
+                        <span>soluciones digitales</span>
+                    </h2>
+
+                    <p>
+                        Utilizamos tecnologías de desarrollo, bases de datos
+                        y análisis de información según las necesidades de cada proyecto.
+                    </p>
+
+                </div>
+
+                <!-- TARJETAS DE TECNOLOGÍAS -->
+                <div class="grid-tecnologias">
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-code-slash"></i>
+
+                        <h3>Desarrollo web</h3>
+
+                        <p>HTML5, CSS3, JavaScript, Bootstrap, PHP.</p>
+
+                    </div>
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-server"></i>
+
+                        <h3>Bases de datos</h3>
+
+                        <p>SQL Server, MySQL, PostgreSQL.</p>
+
+                    </div>
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-graph-up-arrow"></i>
+
+                        <h3>Inteligencia de negocios</h3>
+
+                        <p>Power BI y Looker Studio.</p>
+
+                    </div>
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-file-earmark-spreadsheet"></i>
+
+                        <h3>Productividad y análisis</h3>
+
+                        <p>
+                            Excel, VBA, Google Sheets, Google Apps Script,
+                            Power Query, Power Automate, APIs e integraciones.
+                        </p>
+
+                    </div>
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-arrow-repeat"></i>
+
+                        <h3>Automatización</h3>
+
+                        <p>Macros, procesos y reportes automatizados.</p>
+
+                    </div>
+
+                    <div class="tarjeta-tecnologia">
+
+                        <i class="bi bi-terminal"></i>
+
+                        <h3>Backend y programación</h3>
+
+                        <p>Node.js, Express.js, ASP.NET, C# y Java.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             11. LLAMADO A LA ACCIÓN FINAL
+             ===================================================== -->
+        <section class="cta-final">
+
+            <div class="cta-resplandor" aria-hidden="true"></div>
+
+            <div class="container cta-contenido revelar">
+
+                <span class="sobre-titulo">EL SIGUIENTE PASO COMIENZA AQUÍ</span>
+
+                <h2>
+                    ¿Tienes una idea?
+                    <span>Construyámosla.</span>
+                </h2>
+
+                <p>
+                    Cuéntanos qué quieres mejorar y exploremos una solución digital para tu negocio.
+                </p>
+
+                <a href="Pages/contacto.html" class="btn-principal">
+                    Hablemos de tu proyecto
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- BOTÓN DE WHATSAPP -->
+            <!-- Reemplaza el número de ejemplo por tu número real -->
+            <a
+                href="https://wa.me/573001234567?text=Hola%20BINOVASOFT%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n."
+                class="boton-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Solicitar cotización por WhatsApp"
+            >
+                <i class="bi bi-whatsapp"></i>
+                Solicitar cotización por WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         12. PIE DE PÁGINA
+         ========================================================= -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row gy-4 align-items-start">
+
+                <!-- IDENTIDAD DE LA EMPRESA -->
+                <div class="col-12 col-md-12 col-lg-6">
+
+                    <a class="marca marca-footer" href="#inicio">
+
+                        <img
+                            src="Img/Logo/LogotipoSB.png"
+                            alt="Logo de BINOVASOFT"
+                            class="logo-menu"
+                        >
+
+                        <span class="marca-texto">
+                            <strong>BINO<span>VA</span>-SOFT</strong>
+                            <small>Soluciones tecnológicas</small>
+                        </span>
+
+                    </a>
+
+                    <p class="footer-descripcion">
+                        Tecnología, datos y desarrollo digital para construir mejores formas de trabajar.
+                    </p>
+
+                </div>
+
+
+                <!-- TIKTOK -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>TikTok</h3>
+
+                    <a
+                        href="https://www.tiktok.com/@jhonkess"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                        class="icono-tiktok"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-3.83h-3.12v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .59.05.86.14V10.1a6.1 6.1 0 1 0 5.16 6.02V9.43a7.96 7.96 0 0 0 4.77 1.58V7.9a4.82 4.82 0 0 1-1-.21z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- YOUTUBE -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>YouTube</h3>
+
+                    <a
+                        href="https://www.youtube.com/@TU_USUARIO"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube"
+                        class="icono-youtube"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- INSTAGRAM -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>Instagram</h3>
+
+                    <a
+                        href="https://www.instagram.com/TU_USUARIO/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        class="icono-instagram"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3zm11 1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- X -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>X</h3>
+
+                    <a
+                        href="https://x.com/TU_USUARIO"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X"
+                        class="icono-x"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.4L1.8 2h6.5l4.5 6.8L18.9 2zm-1.1 18h1.7L7.3 3.9H5.5L17.8 20z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>LinkedIn</h3>
+
+                    <a
+                        href="https://www.linkedin.com/in/TU_USUARIO/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                        class="icono-linkedin"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.45 2H3.55C2.69 2 2 2.69 2 3.55v16.9c0 .86.69 1.55 1.55 1.55h16.9c.86 0 1.55-.69 1.55-1.55V3.55C22 2.69 21.31 2 20.45 2zM8 19H5V9h3v10zM6.5 7.73a1.73 1.73 0 1 1 0-3.46 1.73 1.73 0 0 1 0 3.46zM19 19h-3v-4.87c0-1.16-.02-2.65-1.62-2.65-1.62 0-1.87 1.27-1.87 2.57V19h-3V9h2.88v1.37h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+
+                <!-- CORREO -->
+                <div class="col-6 col-md-4 col-lg-1">
+
+                    <h3>Gmail</h3>
+
+                    <a
+                        href="mailto:TU_CORREO@gmail.com"
+                        aria-label="Enviar correo a BINOVASOFT"
+                        class="icono-gmail"
+                    >
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M2 6.5v11A2.5 2.5 0 0 0 4.5 20H6V9.1L12 13.5l6-4.4V20h1.5a2.5 2.5 0 0 0 2.5-2.5v-11a2.5 2.5 0 0 0-4-2L12 9 4 4.5a2.5 2.5 0 0 0-2 2z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COPYRIGHT -->
+            <div class="footer-base">
+
+                <span>
+                    © <span id="anioActual"></span>
+                    BINOVA - SOFT. Todos los derechos reservados.
+                </span>
+
+                <span>Diseñado para impulsar ideas.</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         13. JAVASCRIPT DE BOOTSTRAP Y DEL PROYECTO
+         ========================================================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/main.js"></script>
+
+</body>
+</html>
