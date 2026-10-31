@@ -1482,10 +1482,26 @@ img {
     opacity: .8;
 }
 
+
 .web-linea {
+    width: 87%;
+    height: 10px;
+    float: left;
+    margin-top:1px;
+    margin: 4px 12px 0 0;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #087bff, #06c9e7);
+    opacity: .8;
+}
+
+
+
+.web-linea2 {
     height: 7px;
-    width: 43%;
-    margin: 12px 0;
+    width: 87%;
+    height: 25px;
+    margin: 60px 0;
+    margin-top:75px;
     border-radius: 4px;
     background: #1c5e91;
 }
